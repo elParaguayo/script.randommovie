@@ -1,0 +1,55 @@
+# XBMC Media Center language file
+# Addon Name: Random Movie
+# Addon id: script.randommovie
+# Addon Provider: elParaguayo
+msgid ""
+msgstr ""
+"Project-Id-Version: XBMC Main\n"
+"Report-Msgid-Bugs-To: http://trac.xbmc.org/\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: XBMC Translation Team\n"
+"Language-Team: English (http://www.transifex.com/projects/p/xbmc-main/language/en/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#settings labels
+
+msgctxt "#32000"
+msgid "Restrict results by genre?"
+msgstr ""
+
+#empty ids from 32001 through 32019
+
+#script messages
+
+msgctxt "#32020"
+msgid "Watched movies"
+msgstr ""
+
+msgctxt "#32021"
+msgid "Restrict selection to unwatched movies only?"
+msgstr ""
+
+msgctxt "#32022"
+msgid "Select genre"
+msgstr ""
+
+msgctxt "#32023"
+msgid "Do you want to select a genre to watch?"
+msgstr ""
+
+msgctxt "#32024"
+msgid "Select genre:"
+msgstr ""
+
+msgctxt "#32025"
+msgid "Error"
+msgstr ""
+
+msgctxt "#32026"
+msgid "No movies found matching your criteria"
+msgstr ""
