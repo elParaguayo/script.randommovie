@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="script.randommovie"
-       name="Random Movie Player (post Dharma!)"
-       version="0.1"
+       name="Random Movie Player"
+       version="0.1.0"
        provider-name="el_Paraguayo">
   <requires>
     <import addon="xbmc.python" version="2.0"/>
