@@ -31,19 +31,19 @@ msgid "Watched movies"
 msgstr ""
 
 msgctxt "#32021"
-msgid "Restrict selection to unwatched movies only?"
+msgid "Watched movies"
 msgstr ""
 
 msgctxt "#32022"
-msgid "Select genre"
+msgid "Restrict selection to unwatched movies only?"
 msgstr ""
 
 msgctxt "#32023"
-msgid "Do you want to select a genre to watch?"
+msgid "Select genre:"
 msgstr ""
 
 msgctxt "#32024"
-msgid "Select genre:"
+msgid "Do you want to select a genre to watch?"
 msgstr ""
 
 msgctxt "#32025"
