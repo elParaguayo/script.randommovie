@@ -48,10 +48,10 @@ except:
 filterGenres = params.get("filtergenre", "").lower() == "true"
 
 # The filter by genre prompt can be set via the skin...
-skinprompt = params.get("prompt", "").lower() == "true"
+skinprompt = params.get("promptGenre", "").lower() == "true"
 
 # ... or via the script settings
-scriptprompt = _S_("prompt") == "true"
+scriptprompt = _S_("promptGenre") == "true"
 
 # If the skin setting is set to true this overrides the script setting
 promptUser = skinprompt or scriptprompt
