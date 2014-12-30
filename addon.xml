@@ -2,7 +2,7 @@
 
 <addon id="script.randommovie"
        name="Random Movie Player"
-       version="0.1.0"
+       version="0.1.1"
        provider-name="el_Paraguayo">
   
   <requires>

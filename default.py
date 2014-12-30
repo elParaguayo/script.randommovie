@@ -19,7 +19,7 @@
 
     Plays random movie from user's video library.
 
-    Version: 0.1.0
+    Version: 0.1.1
 '''
 
 import sys
@@ -72,12 +72,13 @@ def getMovieLibrary():
     # Build our JSON query
     jsondict = {"jsonrpc": "2.0",
                 "method": "VideoLibrary.GetMovies",
-                "params": {"properties": ["genre", "playcount", "file"]},
+                "params": {"properties": ["genre", "playcount"]},
                 "id": 1}
 
     # Submit our JSON request and get the response
-    moviestring = unicode(xbmc.executeJSONRPC(json.dumps(jsondict)), 
-                          errors='ignore')
+    moviestring = xbmc.executeJSONRPC(json.dumps(jsondict))
+
+    print moviestring
     
     # Convert the response string into a python dictionary
     movies = json.loads(moviestring)
@@ -140,7 +141,7 @@ def getRandomMovie(filterWatched, filterGenre, genre=None):
         if meetsCriteria:
 
             # ... let's add the filepath to our list.
-            movieList.append(movie["file"])
+            movieList.append(movie["movieid"])
     
     # return a random movie filepath
     try:
@@ -257,8 +258,13 @@ else:
 
 if randomMovie:
 
-   # Play the movie 
-    xbmc.executebuiltin('PlayMedia(' + randomMovie + ',0,noresume)')
+    # Play the movie 
+    jsoncmd={'jsonrpc': '2.0', 
+         'method': 'Player.Open', 
+         'params': {'item': {'movieid': randomMovie}}, 
+         'id':0}
+    cmd = json.dumps(jsoncmd)
+    xbmc.executeJSONRPC(cmd)
 
 else:
 
